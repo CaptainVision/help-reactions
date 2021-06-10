@@ -1,2 +1,2 @@
 # help-reactions
-A custom Help Command with reactions.
+Ein eigener Help Command mit Reaktionen zum bearbeiten der Nachricht.
