@@ -24,8 +24,8 @@ class CustomHelpCommand(commands.Cog):
         if not user.bot:
             if reaction.emoji == "deinemoji":
                 embed = discord.Embed(title="Dein Text", description="Text", color=0x9A2EFE)
-                embed.set_footer(text=f"{ctx.author.name}#{ctx.author.discriminator}",
-                                 icon_url=ctx.author.avatar_url)
+                embed.set_footer(text=f"{user.name}#{user.discriminator}",
+                                 icon_url=user.avatar_url)
                 embed.timestamp = datetime.utcnow()
                 await reaction.message.edit(embed=embed)
                 await reaction.message.remove_reaction("deinemoji", user)
